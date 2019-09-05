@@ -535,7 +535,7 @@ p {
   /* Intro */
   .intro {
     height: auto;
-    padding-top: 130px;
+    padding-top: 120px;
     padding-bottom: 30px;
   }
 
@@ -544,8 +544,8 @@ p {
   }
 
   .intro__subtitle {
-    font-size: 16px;
-    margin-bottom: 30px;
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 
 }
