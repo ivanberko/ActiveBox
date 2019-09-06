@@ -210,7 +210,8 @@ p {
   left: 50%;
   top: 50%;
   z-index: 1;
-  transform: translate3d(-50%, -50%, 0)
+  transform: translate3d(-50%, -50%, 0);
+  min-width: 100%;
 }
 
 .works__content {
@@ -515,6 +516,12 @@ p {
 /* Media
 ========================================  */
 
+@media (max-width: 1300px) {
+  .works__item {
+    width: 50%;
+  }
+}
+
 @media (max-width: 991px) {
   /* Nav */
   .nav {
@@ -529,6 +536,41 @@ p {
   .intro__title {
     font-size: 40px;
   }
+
+  /* Features */
+  .features__item {
+    width: 50%;
+  }
+  /* Team */
+  .team__item {
+    width: 50%;
+    text-align: center;
+  }
+
+  .team__foto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  /* Reviews */
+
+  .reviews__foto {
+    width: 100%;
+    overflow: hidden;
+    margin: 15px 0;
+
+  }
+
+  .reviews__content {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -548,6 +590,88 @@ p {
     margin-bottom: 20px;
   }
 
+  /* Features */
+  .features {
+    margin: 30px 0;
+  }
+
+  .features__item {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+
+  }
+
+  .works__item {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* Team */
+
+  .team {
+    margin: 50px 0;
+  }
+
+  .team__item {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Reviews */
+
+  .reviews__foto {
+    height: 400px;
+  }
+
+  .reviews__text {
+    font-size: 26px;
+  }
+
+  .reviews__author {
+    font-size: 9px;
+  }
+
+  /* Btn */
+  .btn--long {
+    min-width: 260px;
+  }
+
+  /* Download */
+
+  .download {
+    margin: 50px 0;
+  }
+
+  .download__title {
+    font-size: 24px;
+  }
+
+    /* Footer */
+  .footer__block {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .footer__block:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer__inner {
+    padding: 30px 0;
+  }
+
+}
+
+@media (max-width: 414px) {
+
+  /* Reviews */
+  .reviews__img {
+    right: -150px;
+    top: 247px;
+  }
 }
 
 
